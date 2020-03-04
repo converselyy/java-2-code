@@ -1,0 +1,74 @@
+// COURSE: CSCI1620
+// TERM: Spring 2020
+//
+// NAME: Brandon Cline
+// RESOURCES: None
+
+/*
+ * Class to create balls in the Brickbreaker game
+ * 
+ */
+public class Ball
+{
+	// declarations
+	private int x, y;			// x and y coordinates of ball
+	private int dx, dy, radius;	// trajectories in pixels in the x and y directions
+	
+	// constructors
+	public Ball()
+	{
+		this.x = 100;
+		this.y = 100;
+		this.dx = 3;
+		this.dy = 3;
+		this.radius = 5;
+	}
+	
+	public Ball(int a, int b)
+	{
+		this.x = a;
+		this.y = b;
+		this.dx = 3;
+		this.dy = 3;
+		this.radius = 5;
+	}
+	
+	// getters	
+	public int getX()
+	{
+		return this.x;
+	}
+	
+	public int getY()
+	{
+		return this.y;
+	}
+	
+	public int getRadius()
+	{
+		return this.radius;
+	}
+	
+	// bouncy
+	public void bounceHorizontal()
+	{
+		this.y *= -1;
+	}
+	
+	public void bounceVertical()
+	{
+		this.x *= -1;
+	}
+	
+	// moves by adding the current velocity in each direction to the position
+	public void moveOnce()
+	{
+		this.x += this.dx;
+		this.y += this.dy;
+	}
+
+	public String toString()
+	{
+		return String.format("Ball moving at (%d, %d) moving (%d, %d)", x, y, dx, dy);
+	}
+}

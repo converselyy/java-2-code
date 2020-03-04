@@ -1,0 +1,45 @@
+// COURSE: CSCI1620
+// TERM: Spring 2020
+//
+// NAME: Brandon Cline
+// RESOURCES: No external resources were referenced or used.
+
+package recursionlab;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+/**
+ * Includes JUnit test cases for testing the LittleRecursions' class methods.
+ * @author bcline
+ *
+ */
+public class LittleRecursionsTest
+{
+	/**
+	 * 
+	 */
+	@Test
+	public void testIsPalindrome()
+	{	
+		assertEquals(true, LittleRecursions.isPalindrome("RACECAR"));
+	}
+	
+	/**
+	 * Test case for testing reverseSomme() with some numbers and a space.
+	 */
+	@Test
+	public void testReverseSomeWithNumbers()
+	{
+		assertEquals("CBA", LittleRecursions.reverseSome("ABC 123"));
+	}
+	
+	/**
+	 * Test case for testing reverseSome() with an all letter string.
+	 */
+	@Test
+	public void testReverseSomeAllLetters()
+	{
+		assertEquals("fdsa", LittleRecursions.reverseSome("asdf"));
+	}
+}

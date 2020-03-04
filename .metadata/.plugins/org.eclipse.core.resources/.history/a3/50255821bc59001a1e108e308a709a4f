@@ -1,0 +1,22 @@
+// COURSE: CSCI1620
+// TERM: Spring 2020
+//
+// NAME: Brandon Cline
+// RESOURCES: No external resources were referenced or used.
+
+package recursionlab;
+import org.junit.Test;
+
+/**
+ * 
+ * @author bcline
+ *
+ */
+public class LittleRecursionsTest
+{
+	@Test
+	public void testIsPalindrome()
+	{
+		
+	}
+}

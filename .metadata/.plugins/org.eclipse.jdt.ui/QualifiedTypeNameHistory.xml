@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
+<fullyQualifiedTypeName name="triptypes.VacationPackage"/>
+<fullyQualifiedTypeName name="triptypes.RoadTrip"/>
+<fullyQualifiedTypeName name="triptypes.Cruise"/>
+<fullyQualifiedTypeName name="triptypes.AllInclusiveResort"/>
+<fullyQualifiedTypeName name="triptypes.FlightOptionalPackage"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,112 @@
+import java.awt.Color;
+
+// COURSE: CSCI1620
+// TERM: Spring 2020
+//
+// NAME: Brandon Cline
+// RESOURCES: 
+
+/*
+ * Class to represent a brick in the Brickbreaker game
+ */
+
+public class Brick
+{
+	// declarations
+	private final int HEIGHT = 20;			// dimensions of the brick
+	private final int WIDTH = 50;
+	private int x, y;						// brick position; x = left side, y = top
+	private int hits;						// number of hits the brick has left
+	boolean unbreakable, nonexistent;		// if it's unbreakable and if balls should pass through
+	
+	// constructors
+	public Brick (int top, int left)
+	{
+		this.x = left;
+		this.y = top;
+	}
+	
+	public Brick (int top, int left, int initHits)
+	{
+		this.x = left;
+		this.y = top;
+		this.hits = initHits;
+		if (initHits == -1)
+		{
+			this.unbreakable = true;
+		}
+	}
+	
+	// getters (definitely easier to read with the in-line brackets)
+	public int getHeight()
+	{
+		return this.HEIGHT;
+	}
+	public int getWidth()
+	{
+		return this.WIDTH;
+	}
+	public int getTop()
+	{
+		return this.y;
+	}
+	public int getLeft()
+	{
+		return this.x;
+	}
+	public javafx.scene.paint.Color getColor()
+	{
+		if (this.unbreakable)
+		{
+			return Color.BLACK;
+		}
+		else if (this.hits == 3)
+		{
+			return Color.GREEN;
+		}
+		else if (this.hits == 2)
+		{
+			return Color.YELLOW;
+		}
+		else if (this.hits == 1)
+		{
+			return Color.RED;
+		}
+		else if (this.hits == 0)
+		{
+			return Color.WHITE;
+		}
+	}
+	
+	public boolean hit()
+	{
+		if (this.hits == 1)
+		{
+			this.hits--;
+			this.nonexistent = true;
+			return true;
+		}
+		else if (this.hits > 0)
+		{
+			this.hits--;
+			return false;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	public TouchPosition isTouching(Ball temp)
+	{
+		
+	}
+	
+	public String toString()
+	{
+		int rightx, bottomy;
+		rightx = this.x + this.WIDTH;
+		bottomy = this.y - this.HEIGHT;
+		return String.format("Brick at (%d, %d, %d, %d)", this.x, this.y, rightx, bottomy);
+	}
+}

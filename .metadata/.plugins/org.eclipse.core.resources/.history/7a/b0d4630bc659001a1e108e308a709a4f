@@ -1,0 +1,83 @@
+// COURSE: CSCI1620
+// TERM: Spring 2020
+//
+// NAME: Brandon Cline
+// RESOURCES: I had to refresh my memory on finding GCDs. In the end, I used a calculator.
+
+package recursionlab;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+/**
+ * Includes JUnit test cases for testing the LittleRecursions' class methods.
+ * Also, palindromes are fun to type, but the word palindrome is strange
+ * because I always start typing pailindrome.
+ * 
+ * @author bcline
+ */
+public class LittleRecursionsTest
+{
+	/**
+	 * Testing isPalindrome() with an all caps string.
+	 */
+	@Test
+	public void testIsPalindromeAllCaps()
+	{	
+		assertEquals(true, LittleRecursions.isPalindrome("RACECAR"));
+	}
+	
+	/**
+	 * Testing isPalindrome() with varying capitalisation.
+	 */
+	@Test
+	public void testIsPalindromeVaryingCaps()
+	{
+		assertEquals(true, LittleRecursions.isPalindrome("aBbA"));
+	}
+	
+	/**
+	 * Testing isPalindrome() with a lower-case string.
+	 */
+	@Test
+	public void testIsPalindromeLowerCase()
+	{
+		assertEquals(true, LittleRecursions.isPalindrome("tacocat"));
+	}
+	
+	/**
+	 * Test case for testing reverseSomme() with some numbers and a space.
+	 */
+	@Test
+	public void testReverseSomeWithNumbers()
+	{
+		assertEquals("CBA", LittleRecursions.reverseSome("ABC 123"));
+	}
+	
+	/**
+	 * Test case for testing reverseSome() with an all letter string.
+	 */
+	@Test
+	public void testReverseSomeAllLetters()
+	{
+		assertEquals("fdsa", LittleRecursions.reverseSome("asdf"));
+	}
+	
+	/**
+	 * Testing reverseSome() with a palindrome because why not?
+	 */
+	@Test
+	public void testReverseSomePalindrome()
+	{
+		assertEquals("tacocat", LittleRecursions.reverseSome("tacocat"));
+	}
+	
+	/**
+	 * Test case for testing gcd().
+	 */
+	@Test
+	public void testGCD()
+	{
+		
+	}
+}

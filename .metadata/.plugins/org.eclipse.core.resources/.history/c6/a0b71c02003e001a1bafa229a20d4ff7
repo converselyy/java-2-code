@@ -1,0 +1,53 @@
+// COURSE: CSCI1620
+// TERM: Spring 2020
+//
+// NAME: Brandon Cline
+// RESOURCES: None
+
+/*
+ * Class for creating paddles in the game Brickbreaker
+ */
+public class Paddle
+{
+	// declarations
+	private final int WIDTH = 80;					// dimensions of the paddle
+	private final int HEIGHT = 10;
+	
+	private int x, y;								// position of the left side's x-coord and top's y-coord
+	
+	public Paddle(int leftIn, int topIn)
+	{
+		this.x = leftIn;
+		this.y = topIn;
+	}
+	
+	public int getHeight()
+	{
+		return this.HEIGHT;
+	}
+	public int getWidth()
+	{
+		return this.WIDTH;
+	}
+	public int getTop()
+	{
+		return this.y;
+	}
+	public int getLeft()
+	{
+		return this.x;
+	}
+	
+	public void moveTo(int left)
+	{
+		this.x = left;
+	}
+	
+	public TouchPosition isTouching(Ball theBall)
+	{
+		if ((theBall.getY() + theBall.getRadius()) < this.y)
+		{
+			return TouchPosition.TOP;
+		}
+	}
+}

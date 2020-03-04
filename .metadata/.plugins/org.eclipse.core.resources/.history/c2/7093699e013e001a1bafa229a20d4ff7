@@ -1,0 +1,58 @@
+// COURSE: CSCI1620
+// TERM: Spring 2020
+//
+// NAME: Brandon Cline
+// RESOURCES: None
+
+/*
+ * Level class for building levels of the game Brickbreaker
+ * all containing 5 rows and 7 columns of bricks, a ball, and a paddle
+ */
+public class Level
+{
+	// declarations
+	private int width, height;						// dimensions of the level's window
+	GameState state = GameState.PLAYING;			// state of the game
+	Ball ball = new Ball();							// ball object
+	Paddle paddle = new Paddle(-height + 30, 0);	// paddle object starting at position (30, 0)
+	Brick[][] bricks = new Brick[5][7];				// brick array
+	
+	// constructors
+	public Level(int widthIn, int heightIn)
+	{
+		this.width = widthIn;
+		this.height = heightIn;
+		
+		// conditions needs changing, not quite right; need left to right then down a row
+		for (int j = 0; j < bricks.length; j++)
+		{
+			for (int i = 0; i < bricks.length; i++)
+			{
+				// place a brick at Cn = (10 + 5i, -40 - 5j)
+				bricks[i][j] = new Brick(10 + 5 * i, -40 - 5 * j);
+			}
+		}
+	}
+	
+	public Level(int widthIn, int heightIn, String[] brickConfig)
+	{
+		this.width = widthIn;
+		this.height = heightIn;
+		
+		// do the same loop as above but have different arguments for each brick depending on the brickConfig
+		// do a switch/case statement for parsing the string array
+	}
+	
+	public Ball getBall()
+	{
+		return this.ball;
+	}
+	public Brick[][] getBricks()
+	{
+		return this.bricks;
+	}
+	public GameState getStatus()
+	{
+		return this.state;
+	}
+}
