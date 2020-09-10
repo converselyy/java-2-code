@@ -1,0 +1,5 @@
+Fortune 500 Report for 1960
+Revenue
+Min: 71.800 Max: 11233.100 Avg: 394.791 StD: 8827.800
+Profit
+Min: -33.800 Max: 873.100 Avg: 23.971 StD: 536.017

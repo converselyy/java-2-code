@@ -11,7 +11,7 @@ import org.junit.Test;
 
 /**
  * Includes JUnit test cases for testing the LittleRecursions' class methods.
- * Also, palindromes are fun to type, but the word palindrome is strange
+ * Palindromes are fun to type, but the word palindrome is strange
  * because I always start typing pailindrome.
  * 
  * @author bcline
@@ -53,6 +53,15 @@ public class LittleRecursionsTest
 	public void testIsPalindromeEmpty()
 	{
 		assertEquals(true, LittleRecursions.isPalindrome(""));
+	}
+	
+	/**
+	 * Testing isPalindrome() with non-palindrome.
+	 */
+	@Test
+	public void testIsPalindromeButNot()
+	{
+		assertEquals(false, LittleRecursions.isPalindrome("Taylor Swift"));
 	}
 	
 	/*********** reverseSome() testing ***********/
@@ -160,5 +169,27 @@ public class LittleRecursionsTest
 	{
 		int[] temp = null;
 		assertEquals(0, LittleRecursions.sumPositive(temp));
+	}
+	
+	/**
+	 * Testing sumPositive() with a large array.
+	 */
+	@Test
+	public void testSumPositiveLargeArray()
+	{
+		int[] temp = {
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+		};
+		assertEquals(210, LittleRecursions.sumPositive(temp));
+	}
+	
+	/**
+	 * Testing sumPositive() with single element array.
+	 */
+	@Test
+	public void testSumPositiveSinglePringle()
+	{
+		int[] temp = { 1 };
+		assertEquals(1, LittleRecursions.sumPositive(temp));
 	}
 }

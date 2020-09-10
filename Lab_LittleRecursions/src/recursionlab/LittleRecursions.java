@@ -7,7 +7,6 @@
 // to make my own.
 
 package recursionlab;
-import java.util.Arrays;
 
 ////////////////////////////////////////////////////////////
 //
@@ -48,10 +47,10 @@ public class LittleRecursions
 	 */
 	public static boolean isPalindrome(String s)
 	{
-		s = s.toUpperCase();
-		return (s == null) ? false : (s.equals("") || s.length() == 1)
-			? true : (s.charAt(0) == s.charAt(s.length() - 1))
-				? isPalindrome(s.substring(1, s.length() - 1)) : false;
+		String t = s.toUpperCase();
+		return (t == null) ? false : (t.equals("") || t.length() == 1)
+			? true : (t.charAt(0) == t.charAt(t.length() - 1))
+				? isPalindrome(t.substring(1, t.length() - 1)) : false;
 	}
 	
 	/**
@@ -69,8 +68,8 @@ public class LittleRecursions
 	 */
 	public static String reverseSome(String s)
 	{
-		s = s.replaceAll("[^A-Za-z]", "");
-		return (s.equals("") || s == null) ? "" : reverseSome(s.substring(1)) + s.charAt(0);
+		String t = s.replaceAll("[^A-Za-z]", "");
+		return (t == null || t.equals("")) ? "" : reverseSome(t.substring(1)) + t.charAt(0);
 	}
 	
 	/**
@@ -98,10 +97,15 @@ public class LittleRecursions
 	 */
 	public static int sumPositive(int[] array)
 	{
-		//HINT: A helper method might be useful here...
-		
-		return (array == null || array.length <= 1) ? 0 : (array[0] < 1) 
-			? sumPositive(Arrays.copyOfRange(array, 1, array.length - 1))
-				: array[0] + sumPositive(Arrays.copyOfRange(array, 1, array.length - 1));
+		return (array == null) ? 0 : helper(array.length - 1, array);
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public static int helper(int n, int[] temp)
+	{
+		return (n >= 0) ? (temp[n] > 0) ? temp[n] + helper(n - 1, temp) : helper(n - 1, temp) : 0;
 	}
 }

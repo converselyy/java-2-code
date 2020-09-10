@@ -1,0 +1,61 @@
+Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13.000 Max: 111.000 Avg: 39.086 StD: 231.234Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13.000 Max: 111.000 Avg: 39.086 StD: 231.234Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13.000 Max: 111.000 Avg: 39.086 StD: 231.234Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13.000 Max: 111.000 Avg: 39.086 StD: 231.234Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13.000 Max: 111.000 Avg: 39.086 StD: 231.234Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13 Max: 111 Avg: 39.086 StD: 231.234Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13.000 Max: 111.000 Avg: 39.086 StD: 231.234Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13.000 Max: 111.000 Avg: 39.086 StD: 231.234Fortune 500 Report for CBS ranked 13000 times
+Revenue
+Min: 49.700 Max: 79106.500 Avg: 972.368 StD: 110866.967
+Profit
+Min: -1097.300 Max: 4295.200 Avg: 52.333 StD: 5966.906
+Rank
+Min: 1.000 Max: 500.000 Avg: 250.500 StD: 28561.394Fortune 500 Report for CBS ranked 35 times
+Revenue
+Min: 1248.000 Max: 7332.000 Avg: 3241.940 StD: 19179.576
+Profit
+Min: -73.900 Max: 250.800 Avg: 114.726 StD: 678.726
+Rank
+Min: 13.000 Max: 111.000 Avg: 39.086 StD: 231.234
